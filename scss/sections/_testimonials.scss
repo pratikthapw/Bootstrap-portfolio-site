@@ -1,0 +1,29 @@
+@use "../customBoot" as *;
+@use "../components/mixins" as *;
+.testimonial {
+  position: relative;
+  @include gradient;
+}
+
+.testimonial-img {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial__client-name {
+  padding-top: 4rem;
+}
+
+.testimonial-btn:hover {
+  color: #000;
+}
+
+.gray-line {
+  width: 6rem;
+  height: 0.2rem;
+  background: rgba(gray, 0.6);
+  border-radius: 1rem;
+}

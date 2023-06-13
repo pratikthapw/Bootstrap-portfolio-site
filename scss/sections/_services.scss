@@ -1,0 +1,10 @@
+@use "../customBoot" as *;
+@use "../components/mixins" as *;
+
+.title-gradient {
+  @include text-gradient;
+}
+
+.border-right {
+  border-right: 1px solid rgba($dark, 0.6);
+}

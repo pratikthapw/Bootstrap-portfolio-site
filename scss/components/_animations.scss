@@ -1,0 +1,12 @@
+@keyframes animate {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+}

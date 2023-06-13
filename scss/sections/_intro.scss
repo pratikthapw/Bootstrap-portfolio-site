@@ -1,0 +1,32 @@
+@use "../customBoot" as *;
+@use "../components/mixins" as *;
+@use "../components/animations" as *;
+
+.intro-section {
+  @include gradient;
+  padding-top: 10rem;
+}
+
+$size: 7.2rem;
+
+.video-player-btn {
+  font-size: 6rem;
+}
+
+.btn-video-animate {
+  height: $size;
+  width: $size;
+  border: 8px solid rgba($white, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: animate 1.5s linear infinite;
+  &-1 {
+    animation-delay: 1s;
+  }
+  &-2 {
+    animation-delay: 1.2s;
+  }
+}

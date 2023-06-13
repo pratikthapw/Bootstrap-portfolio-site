@@ -1,0 +1,30 @@
+@use "../customBoot" as *;
+@use "../components/mixins" as *;
+
+.btn-hover {
+  border: 0.1rem solid rgba($black, 0.6);
+  &:hover {
+    @include gradient;
+    color: $white;
+
+    .btn-icon-size {
+      background: rgba($dark, 0.6);
+    }
+  }
+}
+
+$size: 2.2rem;
+.btn-icon-size {
+  width: $size;
+  height: $size;
+  position: relative;
+  border-radius: 50%;
+  background: $primary;
+}
+
+.btn-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

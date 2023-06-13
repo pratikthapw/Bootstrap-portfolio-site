@@ -1,0 +1,19 @@
+@use "../customBoot" as *;
+@use "../components/mixins" as *;
+
+.footer {
+  background: rgba($dark, 1);
+}
+
+.footer-tagline {
+  color: $gray-500;
+}
+
+.footer-social-media {
+  background: $gray-800;
+}
+
+.footer__social-icons:hover {
+  color: $primary;
+  cursor: pointer;
+}

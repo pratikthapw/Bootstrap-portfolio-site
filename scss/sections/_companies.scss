@@ -1,0 +1,32 @@
+@use "../customBoot" as *;
+
+.big-line {
+  width: 13rem;
+  height: 0.13rem;
+  background: $primary;
+  display: grid;
+  place-items: center;
+  margin-top: 1rem;
+}
+
+.small-line {
+  width: 2.5rem;
+  height: 0.8rem;
+  background: $primary;
+}
+
+.img-box {
+  max-width: 100%;
+  height: 3rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+// Img Size
+.img-size {
+  height: 100%;
+  cursor: pointer;
+  &:hover {
+    filter: grayscale(120);
+  }
+}

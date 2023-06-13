@@ -1,0 +1,26 @@
+@use "../customBoot" as *;
+@use "../components/mixins" as *;
+
+.menu {
+  @include gradient;
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: rgba($white, 0.5) !important;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    a:hover {
+      color: rgba($white, 0.8) !important;
+    }
+
+    &:first-child a {
+      color: $white !important;
+      &:hover {
+        color: $white !important;
+      }
+    }
+  }
+}

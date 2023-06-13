@@ -1,0 +1,33 @@
+@use "../customBoot" as *;
+
+// Gradient Mixin for Button
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}
+
+// Gradient Mixin for text
+@mixin text-gradient {
+  background: linear-gradient(to right, $primary 0%, $secondary 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+// Center the Div
+
+@mixin centerDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Transition Property
+@mixin transitionProperty {
+  transition-duration: 1s;
+  transition-property: all;
+}

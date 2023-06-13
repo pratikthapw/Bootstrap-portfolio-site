@@ -1,0 +1,27 @@
+{
+  "name": "bootstrap-portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Site using Bootstrap & SCSS",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "scss",
+    "responsive"
+  ],
+  "author": "Pratik Thapa",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "autoprefixer": "^10.4.14",
+    "bootstrap": "^5.3.0",
+    "postcss-cli": "^10.1.0"
+  }
+}

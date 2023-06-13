@@ -1,0 +1,21 @@
+@use "../customBoot" as *;
+@use "../components/mixins" as *;
+
+.get-started {
+  background: rgba($dark, 0.1);
+  padding: 5.5rem 0;
+}
+
+.form-description {
+  @include gradient;
+  padding: 4.5rem 3rem;
+  margin-bottom: 1rem;
+}
+
+.ul-list > * {
+  padding-bottom: 1rem;
+}
+
+.text-gradient {
+  @include text-gradient;
+}
